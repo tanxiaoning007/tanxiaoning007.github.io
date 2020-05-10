@@ -64,7 +64,18 @@
               
               <div class="meta"><span class="time">$[timeformat('2020-05-10T19:25:32+08:00')]</span><br><span class="tags"></span></div>
               <div class="body">
-                  
+                  <p><img src="media/15891099322901/15891170488219.png" alt=""/></p>
+
+<h2 id="toc_0">iptables 调试</h2>
+
+<ol>
+<li>加log到mangle/nat/filter,观察packet.<br/>
+<code>shell
+sudo iptables &lt;rule&gt; -j LOG --log-level 4 --log-prefix &lt;prefix&gt;
+</code></li>
+<li>查看dmesg输出</li>
+</ol>
+
               </div>
             </div>
             
