@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="zh-cn">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1" />
+    <title>
+        
+      cni - 
+      
+    </title>
+    <meta name="keywords" content="" />
+    
+    
+    
+    <link href="atom.xml" rel="alternate" title="" type="application/atom+xml">
+    <script src="https://cdn.bootcss.com/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="asset/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="blogname"></div>
+            <nav>
+              
+                <div class="item"><a target="self" href="index.html">Home</a></div>
+              
+                <div class="item"><a target="_self" href="archives.html">Archives</a></div>
+              
+            </nav>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div> <div class="container" id="category">
+  
+    
+      <div class="article huge">
+        <div class="featureimg" style="background-image: url('asset/defaultfeaimg.jpg')"></div>
+        <div class="row content">
+          <div class="col-md-2"></div>
+          <div class="col-md-10 main">
+            <div class="row">
+              <div class="col-md-10 post">
+                <div class="headline"><a href="15894240247119.html">default network</a></div>
+                
+                <div class="meta"><span class="time">$[timeformat('2020-05-14T10:40:24+08:00')]</span></div>
+                <div class="body">
+                    <pre><code class="language-log">May 14 10:25:54 vccap-w12 kubelet[94788]: I0514 10:25:54.983324   94788 plugins.go:377] Calling network plugin cni to set up pod &quot;coredns-78fcdf6894-wsqkc_kube-system&quot;
+May 14 10:25:54 vccap-w12 kubelet[94788]: I0514 10:25:54.985094   94788 cni.go:287] Got netns path /proc/97500/ns/net
+May 14 10:25:54 vccap-w12 kubelet[94788]: I0514 10:25:54.985665   94788 cni.go:288] Using podns path kube-system
+May 14 10:25:54 vccap-w12 kubelet[94788]: I0514 10:25:54.985857   94788 cni.go:257] About to add CNI network cni-loopback (type=loopback)
+May 14 10:25:54 vccap-w12 kubelet[94788]: I0514 10:25:54.987688   94788 factory.go:114] Using factory &quot;docker&quot; for container &quot;/kubepods/burstable/pod3c16c4be-958a-11ea-855e-001b21b90eb4/0b7690efb5813a5c7027f0c506fd487c299c4774c248952b4608616c5599b317&quot;
+May 14 10:25:54 vccap-w12 kubelet[94788]: I0514 10:25:54.988702   94788 cni.go:287] Got netns path /proc/97500/ns/net
+May 14 10:25:54 vccap-w12 kubelet[94788]: I0514 10:25:54.989248   94788 cni.go:288] Using podns path kube-system
+May 14 10:25:54 vccap-w12 kubelet[94788]: I0514 10:25:54.989921   94788 cni.go:257] About to add CNI network node-cni-network (type=multus)
+May 14 10:25:54 vccap-w12 kubelet[94788]: I0514 10:25:54.992259   94788 manager.go:997] Added container: &quot;/kubepods/burstable/pod3c16c4be-958a-11ea-855e-001b21b90eb4/0b7690efb5813a5c7027f0c506fd487c299c4774c248952b4608616c5599b317&quot; (aliases: [k8s_POD_coredns-78fcdf6894-wsqkc_kube-system_3c16c4be-958a-11ea-855e-001b21b90eb4_0 0b7690efb5813a5c7027f0c506fd487c299c4774c248952b4608616c5599b317], namespace: &quot;docker&quot;)
+May 14 10:25:54 vccap-w12 kubelet[94788]: I0514 10:25:54.993121   94788 handler.go:325] Added event &amp;{/kubepods/burstable/pod3c16c4be-958a-11ea-855e-001b21b90eb4/0b7690efb5813a5c7027f0c506fd487c299c4774c248952b4608616c5599b317 2020-05-14 02:25:54.020866435 +0000 UTC containerCreation {&lt;nil&gt;}}
+May 14 10:25:54 vccap-w12 kubelet[94788]: I0514 10:25:54.993747   94788 container.go:448] Start housekeeping for container &quot;/kubepods/burstable/pod3c16c4be-958a-11ea-855e-001b21b90eb4/0b7690efb5813a5c7027f0c506fd487c299c4774c248952b4608616c5599b317&quot;
+May 14 10:25:55 vccap-w12 kubelet[94788]: 2020-05-14T10:25:55+08:00 [debug] LoadDelegateNetConf: {&quot;delegate&quot;:{&quot;forceAddress&quot;:true,&quot;hairpinMode&quot;:true,&quot;isDefaultGateway&quot;:true},&quot;masterplugin&quot;:true,&quot;name&quot;:&quot;cbr0&quot;,&quot;type&quot;:&quot;flannel&quot;}, &lt;nil&gt;,
+May 14 10:25:55 vccap-w12 kubelet[94788]: 2020-05-14T10:25:55+08:00 [debug] cmdAdd: &amp;{0b7690efb5813a5c7027f0c506fd487c299c4774c248952b4608616c5599b317 /proc/97500/ns/net eth0 IgnoreUnknown=1;K8S_POD_NAMESPACE=kube-system;K8S_POD_NAME=coredns-78fcdf6894-wsqkc;K8S_POD_INFRA_CONTAINER_ID=0b7690efb5813a5c7027f0c506fd487c299c4774c248952b4608616c5599b317 /opt/cni/bin [123 34 99 110 105 86 101 114 115 105 111 110 34 58 34 34 44 34 100 101 102 97 117 108 116 112 111 100 110 101 116 34 58 116 114 117 101 44 34 100 101 108 101 103 97 116 101 115 34 58 91 123 34 100 101 108 101 103 97 116 101 34 58 123 34 102 111 114 99 101 65 100 100 114 101 115 115 34 58 116 114 117 101 44 34 104 97 105 114 112 105 110 77 111 100 101 34 58 116 114 117 101 44 34 105 115 68 101 102 97 117 108 116 71 97 116 101 119 97 121 34 58 116 114 117 101 125 44 34 109 97 115 116 101 114 112 108 117 103 105 110 34 58 116 114 117 101 44 34 110 97 109 101 34 58 34 99 98 114 48 34 44 34 116 121 112 101 34 58 34 102 108 97 110 110 101 108 34 125 93 44 34 107 117 98 101 99 111 110 102 105 103 34 58 34 47 118 97 114 47 108 105 98 47 99 97 115 97 47 46 107 117 98 101 47 99 111 110 102 105 103 34 44 34 108 111 103 70 105 108 101 34 58 34 47 118 97 114 47 108 111 103 47 109 117 108 116 117 115 46 108 111 103 34 44 34 108 111 103 76 101 118 101 108 34 58 34 100 101 98 117 103 34 44 34 110 97 109 101 34 58 34 110 111 100 101 45 99 110 105 45 110 101 116 119 111 114 107 34 44 34 116 121 112 101 34 58 34 109 117 108 116 117 115 34 125]}, &lt;nil&gt;, &lt;nil&gt;
+May 14 10:25:55 vccap-w12 kubelet[94788]: 2020-05-14T10:25:55+08:00 [debug] GetK8sArgs: &amp;{0b7690efb5813a5c7027f0c506fd487c299c4774c248952b4608616c5599b317 /proc/97500/ns/net eth0 IgnoreUnknown=1;K8S_POD_NAMESPACE=kube-system;K8S_POD_NAME=coredns-78fcdf6894-wsqkc;K8S_POD_INFRA_CONTAINER_ID=0b7690efb5813a5c7027f0c506fd487c299c4774c248952b4608616c5599b317 /opt/cni/bin [123 34 99 110 105 86 101 114 115 105 111 110 34 58 34 34 44 34 100 101 102 97 117 108 116 112 111 100 110 101 116 34 58 116 114 117 101 44 34 100 101 108 101 103 97 116 101 115 34 58 91 123 34 100 101 108 101 103 97 116 101 34 58 123 34 102 111 114 99 101 65 100 100 114 101 115 115 34 58 116 114 117 101 44 34 104 97 105 114 112 105 110 77 111 100 101 34 58 116 114 117 101 44 34 105 115 68 101 102 97 117 108 116 71 97 116 101 119 97 121 34 58 116 114 117 101 125 44 34 109 97 115 116 101 114 112 108 117 103 105 110 34 58 116 114 117 101 44 34 110 97 109 101 34 58 34 99 98 114 48 34 44 34 116 121 112 101 34 58 34 102 108 97 110 110 101 108 34 125 93 44 34 107 117 98 101 99 111 110 102 105 103 34 58 34 47 118 97 114 47 108 105 98 47 99 97 115 97 47 46 107 117 98 101 47 99 111 110 102 105 103 34 44 34 108 111 103 70 105 108 101 34 58 34 47 118 97 114 47 108 111 103 47 109 117 108 116 117 115 46 108 111 103 34 44 34 108 111 103 76 101 118 101 108 34 58 34 100 101 98 117 103 34 44 34 110 97 109 101 34 58 34 110 111 100 101 45 99 110 105 45 110 101 116 119 111 114 107 34 44 34 116 121 112 101 34 58 34 109 117 108 116 117 115 34 125]}
+May 14 10:25:55 vccap-w12 kubelet[94788]: I0514 10:25:55.240494   94788 generic.go:183] GenericPLEG: Relisting
+May 14 10:25:55 vccap-w12 kubelet[94788]: I0514 10:25:55.259090   94788 generic.go:147] GenericPLEG: baac1dcd-90f8-11ea-8804-2047477eb728/e58f9935b2bcb03daea858bd83f56f4595f20af8ab16ba2897d649dddefed704: exited -&gt; non-existent
+May 14 10:25:55 vccap-w12 kubelet[94788]: I0514 10:25:55.259689   94788 generic.go:147] GenericPLEG: baac1dcd-90f8-11ea-8804-2047477eb728/702f638098a4be59c37ac6ae18b3115e091b69d90bd5735be3f81b2ffc27f52e: exited -&gt; non-existent
+May 14 10:25:55 vccap-w12 kubelet[94788]: I0514 10:25:55.260229   94788 generic.go:147] GenericPLEG: baac1dcd-90f8-11ea-8804-2047477eb728/e7ca28da84541176bd339ccc31844e7496684fb788f1762b7aa6a932f3954d6a: running -&gt; exited
+May 14 10:25:55 vccap-w12 kubelet[94788]: I0514 10:25:55.260778   94788 generic.go:147] GenericPLEG: 3c16c4be-958a-11ea-855e-001b21b90eb4/0b7690efb5813a5c7027f0c506fd487c299c4774c248952b4608616c5599b317: non-existent -&gt; running
+May 14 10:25:55 vccap-w12 kubelet[94788]: I0514 10:25:55.263233   94788 kuberuntime_manager.go:852] getSandboxIDByPodUID got sandbox IDs [&quot;e7ca28da84541176bd339ccc31844e7496684fb788f1762b7aa6a932f3954d6a&quot; &quot;98993502a403503400a6f4c48328300ac81d361f70b2142a1e1ef2a2cc390130&quot;] for pod &quot;coredns-78fcdf6894-2xfvv_kube-system(baac1dcd-90f8-11ea-8804-2047477eb728)&quot;
+May 14 10:25:55 vccap-w12 kubelet[94788]: I0514 10:25:55.268437   94788 generic.go:380] PLEG: Write status for coredns-78fcdf6894-2xfvv/kube-system: &amp;container.PodStatus{ID:&quot;baac1dcd-90f8-11ea-8804-2047477eb728&quot;, Name:&quot;coredns-78fcdf6894-2xfvv&quot;, Namespace:&quot;kube-system&quot;, IP:&quot;&quot;, ContainerStatuses:[]*container.ContainerStatus{}, SandboxStatuses:[]*v1alpha2.PodSandboxStatus{(*v1alpha2.PodSandboxStatus)(0xc4218290e0), (*v1alpha2.PodSandboxStatus)(0xc420248230)}} (err: &lt;nil&gt;)
+
+
+</code></pre>
+
+                </div>
+                <div class="bottom">
+                  <a href="15894240247119.html" class="continue float-right">
+                    继续阅读
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="otherposts row">
+    
+   
+  </div>
+  <div class="pagenavi">
+    <div class="item">已是最新一页</div>
+    <div class="item"> · </div>
+    <div class="item">已是最旧一页</div>
+  </div>
+ </div>
+ <script>
+   let category = new Vue({
+    el: '#category',
+    data: {},
+    methods: {
+      indexOddandEven(index) {
+        return index%2 ? 'odd' : 'even';
+      },
+      timeformat(raw) {
+        return moment(raw).format("YYYY 年 MM 月 DD 日");
+      }
+    },
+    delimiters: ['$[', ']']
+  })
+ </script>
+      <div class="container">
+      <hr>
+      <div class="footer" id="footer">
+        <div class="slogan">Let's tessellate.</div>
+        <div class="meta">
+          
+          <p>「」使用 <a href="https://zh.mweb.im/" target="_blank">MWeb</a> 和 <a href="https://github.com/Astrian/reflect-white-mweb-theme" target="_blank">Reflect White</a> 搭建。</p>
+        </div>
+      </div>
+      <script>
+        let footer = new Vue({
+          el: '#footer',
+          data: {
+            message: 'hello'
+          },
+          delimiters: ['$[', ']']
+        })
+      </script>
+    </div>
+  </div>
+</body>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</html>
